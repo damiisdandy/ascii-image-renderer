@@ -2,7 +2,7 @@ from PIL import Image
 import os, argparse
 
 
-PIXELS = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'."
+PIXELS = ".'`^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
 TERMINAL_WIDTH = os.get_terminal_size().columns
 PIXEL_WIDTH_MULTIPLIER = 2
 
@@ -47,8 +47,7 @@ def main():
             R, G, B = pixels[x, y]
             # calculating greyscale value (Average method)
             brightness = (R + G + B) // 3
-            # subtracing because `PIXELS` goes from brightest to darkest
-            pixel_index = int(((255 - brightness) / 255) * len(PIXELS))
+            pixel_index = int(((brightness) / 255) * len(PIXELS))
             # making sure the pixel index is within the range of PIXELS
             pixel_index = min(pixel_index, len(PIXELS) - 1)
             # increase pixel (width) to accomodate for the font-size/line-height
