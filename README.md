@@ -20,3 +20,5 @@ optional arguments:
 ![example-ascii](/assets/example-ascii.png)
 
 It simply maps each pixel's brightness to a character within `.'^",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$` (darkest to lightest) and renders it as ASCII art.
+
+![zoomed](/assets/zoomed.png)

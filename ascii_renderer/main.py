@@ -3,6 +3,7 @@ import os, argparse
 
 
 PIXELS = ".'`^\",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+
 TERMINAL_WIDTH = os.get_terminal_size().columns
 PIXEL_WIDTH_MULTIPLIER = 2
 
