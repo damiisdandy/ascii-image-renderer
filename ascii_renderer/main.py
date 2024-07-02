@@ -15,7 +15,7 @@ def arg_parser():
         "--coverage",
         type=float,
         default=0.8,
-        help="How much terminal space the image takes, the higher the clearer",
+        help="how much terminal space the image takes, the higher the clearer",
     )
     return parser.parse_args()
 
